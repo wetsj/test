@@ -1,0 +1,293 @@
+html {
+  scroll-behavior: smooth;
+  
+}
+body {
+  font-family: Comic Sans Ms;
+  font-weight: 300;
+  
+  margin: 0;
+}
+section {
+  background: var(--color);
+  height: 100vh;
+}
+nav {
+  padding: 25px;
+  position: sticky;
+  top: 0;
+  
+  background-color: #0C0F16;
+  
+  display: grid;
+  grid-template-columns: 25% auto;
+  gap: 30%;
+}
+nav a {
+	font-family: 'Rubik';
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: opacity 200ms ease-in-out;
+  overflow: hidden;
+}
+nav ul li a::after {
+  content: '';
+  display: block;
+  
+  width: 0%;
+  height: 3px;
+  
+  margin-top: 3px;
+  border-radius: 3px;
+  background-color: #FCB934;
+  
+  transition: width .2s ease-in-out;
+}
+nav ul li a.current::after {
+  width: 100%;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.heading {
+  text-align: center;
+}
+.heading a {
+  font-weight: 500;
+  font-size: 25px;
+  color: #fff;
+}
+.heading span {
+	color: red;
+	
+}
+/*******************************ACCUEIL***********************************/
+#home{
+	background-color: #0C0F16;
+}
+#home .max-width {
+	color: #fff;
+	margin: auto 120px;
+	text-align: center;
+	padding-top: 120px;
+}
+#home .home-content .text1 {
+	font-size: 43px;
+	font-weight: 600;
+	
+}
+#home .home-content .text2 {
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	
+}
+#home .home-content .button-one{
+	background-color: red;
+	font-size: 40px;
+	font-weight: 200;
+	color: white;
+	
+	border-radius: 10px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	
+}
+#home .home-content .button-one:hover{
+	background: none;
+	background-color: white;
+	color: black;
+}
+#home .home-content .social-media {
+	text-align: right;
+	margin-top: 120px;
+	
+}
+#home .home-content img {
+	margin-left: 15px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+/***********************A*Propos*de*moi*********************************/
+
+#about {
+	background-color: #ffab0e;
+	
+}
+#about{
+	padding: 50px 150px;
+}
+#about .title{
+	font-size: 40px;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: underline red;
+	padding-bottom: 40px;
+}
+#about .about-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+#about .div-left{
+	width: 45%;
+}
+#about .div-right{
+	width: 55%;
+}
+#about .div-left img{
+	height: 400px;
+	width: 400px;
+	border-radius: 6px;
+	object-fit: cover;
+}
+
+#about .div-right .text{
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	}
+#about .div-right .text span{
+		color: crimson;
+	}
+#about .div-right p{
+	text-align: justify;
+	font-size: 20px;
+}
+
+#about .div-right .button-two{
+	background-color: red;
+	font-size: 40px;
+	font-weight: 200;
+	color: white;
+	
+	border-radius: 10px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#about .div-right .button-two:hover{
+	background: none;
+	background-color: white;
+	color: black;
+}
+
+
+
+/*****************************Contact***********************************/
+#contact {
+	background-color: #b700ff;
+}
+#contact .max-width {
+	padding: 50px 150px;
+}
+#contact .title{
+	font-size: 40px;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: underline red;
+	padding-bottom: 4s0px;
+}
+#contact .contact-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+#contact .div-left{
+	width: 60%;
+}
+#contact .div-left p{
+	font-size: 20px;
+}
+#contact .div-left img{
+	width: 20px;
+	height: 20px;
+}
+
+#contact .div-right{
+	width: 40%;
+	margin-left: 60px;
+}
+
+/******************************Hobbit***********************************/
+#Hobbit {
+	background-color: #ff1576;
+}
+#Hobbit .max-width {
+	text-align: center;
+}
+#Hobbit .title{
+	font-size: 40px;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: underline red;
+	padding-bottom: 40px;
+}
+.Hobbit-content{
+	margin-left: 100px;
+}
+.Hobbit-content .a {
+	background-color: red;
+	font-size: 10px;
+	font-weight: 200;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#Hobbit-content .a:hover{
+	background: none;
+	background-color: white;
+	color: black;
+}
+.Hobbit-content div{
+	padding: 50px;
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	background-color: black;
+}
+.Hobbit-content img{
+	border-color: 2px solid red;
+	
+}
+.tab{
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	float: center;
+	margin-left: 40px;
+	border: 4px solid red;
+}
+/******************************Footer***************************************/
+footer {
+	background-color: #0C0F16;
+	color: #fff;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 500;
+}
